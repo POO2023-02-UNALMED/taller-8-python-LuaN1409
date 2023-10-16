@@ -41,3 +41,7 @@ class Futbolista(Deportista):
         cadena = "Mi nombre es {} soy profesional en el deporte {} Tengo {} años de edad y llevo {} años en el deporte".format(self.getNombre(), self.getDeporte(), str(self.getEdad()), str(self.getAñosPracticando()))
         return cadena
     
+    if __name__ == "__main__":
+     futbolista = Futbolista("Juan Pablo", 30, "1,80", "M", 12, 400, 1, "Derecha")
+     print(futbolista.__str__())
+    
